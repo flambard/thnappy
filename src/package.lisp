@@ -1,0 +1,12 @@
+(defpackage :thnappy
+  (:documentation
+   "Common Lisp bindings to Google's Snappy compression library.")
+  (:use :cl :cffi)
+  (:export
+
+   :compress-string
+   :compress-vector
+   :uncompress-vector
+   :valid-compressed-p
+
+   ))
