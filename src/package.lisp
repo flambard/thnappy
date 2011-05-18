@@ -4,9 +4,13 @@
   (:use :cl :cffi)
   (:export
 
-   :compress-string
-   :compress-vector
-   :uncompress-vector
+   :compress
+   :uncompress
    :valid-compressed-p
+
+   :compress-string
+   :compress-byte-vector
+   :uncompress-byte-vector
+   :valid-compressed-byte-vector-p
 
    ))
