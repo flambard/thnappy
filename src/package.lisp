@@ -1,6 +1,7 @@
 (defpackage :thnappy
   (:documentation
    "Common Lisp bindings to Google's Snappy compression library.")
+  (:nicknames :snappy)
   (:use :cl :cffi)
   (:export
 
