@@ -13,6 +13,8 @@
   ((:module :src
             :components
             ((:file "package")
+             (:file "conditions"
+                    :depends-on ("package"))
              (:file "libsnappy"
                     :depends-on ("package"))
              (:file "block-memory-operations"
