@@ -1,6 +1,7 @@
 (in-package :thnappy)
 
 (define-foreign-library libsnappy
+  (:unix (:or "libsnappy.so" "libsnappy.so.1"))
   (t (:default "libsnappy")))
 
 (use-foreign-library libsnappy)
