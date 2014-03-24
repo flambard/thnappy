@@ -17,6 +17,7 @@
   (:documentation "Uncompresses BYTES and returns a vector."))
 
 (defmethod uncompress :around (bytes &key to-string)
+  (declare (ignore bytes))
   (let ((uncompressed (call-next-method)))
     (if to-string
         (map 'string #'code-char uncompressed)
